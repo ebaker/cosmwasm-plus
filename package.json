@@ -1,0 +1,19 @@
+{
+  "name": "cosmwasm-plus",
+  "version": "0.6.2",
+  "main": "dist/index.ts",
+  "repository": "git@github.com:ebaker/cosmwasm-plus.git",
+  "author": "Eliot Baker <430383+ebaker@users.noreply.github.com>",
+  "license": "AGPL 3.0",
+  "private": true,
+  "scripts": {
+    "json2ts": "json2ts",
+    "generate-types": "bash scripts/json2ts.sh",
+    "clean-types": "rm -rf dist/*",
+    "generate-barrels": "barrelsby --delete -d dist/ -s filesystem -S -q"
+  },
+  "devDependencies": {
+    "json-schema-to-typescript": "^10.1.4",
+    "barrelsby": "^2.2.0"
+  }
+}
